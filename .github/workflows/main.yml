@@ -6,7 +6,7 @@ jobs:
     steps:
     - name: Hello wordl action step
       id: hello
-      uses: actions/hello-github-actions@v1
+      uses: actions/hello-github-actions@v2
       with:
         who-to-greet: 'Donny'
     - name: Get the output time
