@@ -12,7 +12,7 @@ the time of greet
 
 ### Example of use
 
-uses: actions/hello-wordl-docker-action@v1
+uses: actions/hello-github-actions@v2
 with:
     who-to-greet: 'Donny'
 
