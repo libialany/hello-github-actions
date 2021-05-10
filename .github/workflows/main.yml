@@ -2,11 +2,11 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A jjob to say hello
+    name: A job to say hello
     steps:
     - name: Hello wordl action step
       id: hello
-      uses: actions/hello-wordl-docker-action@v1
+      uses: actions/hello-github-actions@v1
       with:
         who-to-greet: 'Donny'
     - name: Get the output time
