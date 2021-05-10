@@ -1,0 +1,17 @@
+# action.yaml
+
+name: 'Hello World'
+description: 'Greet csomeone and record the time'
+inputs:
+  who-to-greet: 
+    description: 'Who to greet'
+    required: true
+    default: 'Wordl'
+outputs:
+  time:
+    description: 'The time to greet action'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args: 
+    - ${{ inputs.who-to-greet }}
